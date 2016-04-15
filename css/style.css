@@ -1,0 +1,186 @@
+/*Fonts*/
+/* line 2, ../scss/style.scss */
+body {
+  font-family: 'Source Code Pro', monospace;
+}
+
+/*Variables*/
+/*Typography*/
+/* line 14, ../scss/style.scss */
+html, article h1 {
+  font-size: 1em;
+}
+
+/* line 15, ../scss/style.scss */
+body {
+  transition: all 1s cubic-bezier(0.39, 0.58, 0.57, 1);
+  background-color: white;
+  font-family: 'Source Cod Pro', monospace;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333333;
+}
+
+/* line 23, ../scss/style.scss */
+p {
+  margin-bottom: 1.3em;
+}
+
+/* line 24, ../scss/style.scss */
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-family: 'Source Cod Pro', monospace;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+/* line 30, ../scss/style.scss */
+h1 {
+  margin-top: 0;
+  font-size: 3.157em;
+}
+
+/* line 34, ../scss/style.scss */
+h2 {
+  font-size: 2.369em;
+}
+
+/* line 35, ../scss/style.scss */
+h3 {
+  font-size: 1.777em;
+}
+
+/* line 36, ../scss/style.scss */
+h4 {
+  font-size: 1.333em;
+}
+
+/* line 37, ../scss/style.scss */
+small, .font_small {
+  font-size: 0.75em;
+}
+
+/* MIXIN
+**************************/
+/* GLOBAL
+**************************/
+/* line 52, ../scss/style.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 53, ../scss/style.scss */
+.fl {
+  float: left;
+}
+
+/* line 54, ../scss/style.scss */
+.fr {
+  float: right;
+}
+
+/* line 55, ../scss/style.scss */
+.f-border {
+  border: 1px solid transparent;
+}
+
+/* line 56, ../scss/style.scss */
+.clear {
+  clear: both;
+}
+
+/* line 57, ../scss/style.scss */
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Custom
+**************************/
+/* line 61, ../scss/style.scss */
+.inner {
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+/* line 62, ../scss/style.scss */
+*::selection {
+  color: white;
+  background: #333333;
+}
+
+/* line 66, ../scss/style.scss */
+a {
+  color: black;
+  text-decoration: underline;
+}
+/* line 69, ../scss/style.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 74, ../scss/style.scss */
+.nightBody {
+  background: #333333;
+  color: white;
+}
+
+/* line 78, ../scss/style.scss */
+.nightLink {
+  color: #cccccc;
+}
+
+/* line 82, ../scss/style.scss */
+article {
+  /*width: 675px;*/
+}
+/* line 84, ../scss/style.scss */
+article p {
+  padding-left: 3em;
+}
+
+/* line 89, ../scss/style.scss */
+ul {
+  padding-left: 3em;
+  list-style: none;
+}
+
+/* line 94, ../scss/style.scss */
+header {
+  padding-top: 1.5em;
+}
+
+/* line 98, ../scss/style.scss */
+footer {
+  text-align: center;
+  margin: 2em;
+}
+
+/* line 104, ../scss/style.scss */
+.wrapper .light {
+  width: 51px;
+  height: 81px;
+  background: url("../img/lamp-sprite-2.png");
+  background-size: 100%;
+  /* background-position-y: 81px; */
+  cursor: pointer;
+  transform: rotate(180deg);
+  position: absolute;
+  left: 30px;
+  top: 50px;
+}
+/* line 115, ../scss/style.scss */
+.wrapper .light div {
+  background-color: #737373;
+  width: 2px;
+  height: 51px;
+  position: relative;
+  top: 81px;
+  left: 24px;
+}

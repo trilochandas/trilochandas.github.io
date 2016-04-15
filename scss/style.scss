@@ -1,0 +1,124 @@
+/*Fonts*/
+body{
+	font-family: 'Source Code Pro', monospace ;
+}
+
+
+/*Variables*/
+$color1: #333;
+$color2: white;
+$color3: #000;
+$color4: darken($color2, 20%);
+
+/*Typography*/
+html, article h1 {font-size: 1em;}
+body {
+  transition: all 1s cubic-bezier(0.39, 0.58, 0.57, 1);
+  background-color: $color2;
+  font-family: 'Source Cod Pro', monospace;
+  font-weight: 400;
+  line-height: 1.45;
+  color: $color1;
+}
+p {margin-bottom: 1.3em;}
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-family: 'Source Cod Pro', monospace;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+h1 {
+  margin-top: 0;
+  font-size: 3.157em;
+}
+h2 {font-size: 2.369em;}
+h3 {font-size: 1.777em;}
+h4 {font-size: 1.333em;}
+small, .font_small {font-size: 0.75em;}
+
+
+
+/* MIXIN
+**************************/
+
+@mixin box{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* GLOBAL
+**************************/
+*, *:before, *:after {@include box; margin: 0; padding: 0;}
+.fl{float: left;}
+.fr{float: right;}
+.f-border{border: 1px solid transparent;}
+.clear{clear: both;}
+img{width: 100%; max-width: 100%;}
+
+/* Custom
+**************************/
+.inner{max-width: 650px; width: 100%; margin: 0 auto; padding: 0 1em;}
+*::selection{
+  color: $color2;
+  background: $color1;
+}
+a{
+	color: $color3;
+	text-decoration: underline;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+.nightBody{
+  background: $color1;
+  color: $color2;
+}
+.nightLink{
+  color: $color4;
+}
+
+article{
+	  /*width: 675px;*/
+	  p{
+		  padding-left: 3em;
+	  }
+}
+
+ul{
+	padding-left: 3em;
+  list-style: none;
+}
+
+header{
+	padding-top: 1.5em;
+}
+
+footer{
+	text-align: center;
+  margin: 2em;
+}
+
+.wrapper{
+  .light{
+    width: 51px;
+    height: 81px;
+    background: url("../img/lamp-sprite-2.png");
+    background-size: 100%;
+    /* background-position-y: 81px; */
+    cursor: pointer;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    div{
+      background-color: rgb(115, 115, 115);
+      width: 2px;
+      height: 51px;
+      position: relative;
+      top: 81px;
+      left: 24px;
+    }
+  }
+}
